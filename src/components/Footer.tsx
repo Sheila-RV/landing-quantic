@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
           <div className="flex items-center gap-3">
             <img 
-              src="/logo_f_white.png"
+              src="/landing-quantic/logo_f_white.png"
               alt="Quantic Logo"
               className="h-8 w-auto brightness-110"
               referrerPolicy="no-referrer"

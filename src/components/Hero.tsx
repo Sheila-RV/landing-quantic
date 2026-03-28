@@ -15,7 +15,7 @@ export default function Hero() {
         >
           <div className="flex justify-center mb-8">
             <img 
-            src="/logo_f_white.png"
+            src="/landing-quantic/logo_f_white.png"
             alt="Quantic Logo"
             className="h-24 w-auto brightness-125 drop-shadow-[0_0_15px_rgba(0,191,255,0.3)]"
             referrerPolicy="no-referrer" 
