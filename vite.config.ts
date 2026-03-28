@@ -6,9 +6,10 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
+    base: '/landing-quantic/',
     plugins: [react(), tailwindcss()],
     define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      //'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.PUBLIC_FORMSPREE_ID': JSON.stringify(env.PUBLIC_FORMSPREE_ID),
       'process.env.PUBLIC_WA_NUMBER': JSON.stringify(env.PUBLIC_WA_NUMBER),
     },
