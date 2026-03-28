@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
+
+@theme {
+  --font-syne: "Syne", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  
+  --color-quantic-cyan: #00BFFF;
+  --color-quantic-bg: #0a0a0c;
+  --color-quantic-surface: #16161d;
+  --color-quantic-surface-light: #1c1c26;
+}
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-quantic-bg);
+  color: #ffffff;
+  font-family: var(--font-dm-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-syne);
+}
+
+.quantic-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 191, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 191, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-scrolled {
+  background-color: rgba(10, 10, 12, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 191, 255, 0.1);
+}
+
+.service-card-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-quantic-cyan);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-card-line {
+  transform: scaleX(1);
+}
+
+.glow-radial {
+  background: radial-gradient(circle at center, rgba(0, 191, 255, 0.15) 0%, transparent 70%);
+}
