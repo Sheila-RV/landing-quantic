@@ -27,7 +27,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
           <img 
-            src="/landing-quantic/logo_f_white.png"
+            src="/logo_f_white.png"
             alt="Quantic Logo"
             className="h-10 w-auto"
             
