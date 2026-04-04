@@ -2,7 +2,7 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const members = [
   {
-    name: 'Mauricio Diaz',
+    name: 'Alejandro Díaz',
     role: 'AI & Automatizaciones',
     skills: ['LangChain', 'N8N', 'Python', 'ML'],
     bio: 'Especialista en orquestación de agentes de IA y flujos de trabajo autónomos para optimizar operaciones complejas.',
